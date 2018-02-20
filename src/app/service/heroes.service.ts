@@ -44,6 +44,7 @@ export class HeroesService {
   }
 
   getHeroe( key$: string) {
+    // tslint:disable-next-line:prefer-const
     let url = `${ this.heroeURL }/${ key$ }.json`;
     return this.http.get( url )
     .map(res => res.json());
@@ -55,6 +56,7 @@ export class HeroesService {
   }
 
   deleteHeroe( key$: string ) {
+    // tslint:disable-next-line:prefer-const
     let url = `${ this.heroeURL }/${ key$ }.json `;
     return this.http.delete( url )
     .map(res => res.json());

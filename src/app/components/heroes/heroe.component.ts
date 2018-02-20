@@ -19,6 +19,7 @@ export class HeroeComponent implements OnInit {
     casa: 'Marvel'
   };
 
+  // tslint:disable-next-line:no-inferrable-types
   nuevo: boolean = false;
   id: string;
 

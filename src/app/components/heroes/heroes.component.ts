@@ -10,6 +10,7 @@ import { setTimeout } from 'timers';
 export class HeroesComponent implements OnInit {
 
   heroes: any[] = [];
+  // tslint:disable-next-line:no-inferrable-types
   loading: boolean = true;
 
   constructor(private _heroesServices: HeroesService) {
